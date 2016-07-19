@@ -15,6 +15,8 @@
 		737C7BBA1D3CC534008E7312 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 737C7BB81D3CC534008E7312 /* LaunchScreen.storyboard */; };
 		737C7BC51D3CC534008E7312 /* TestDetectionUrlTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 737C7BC41D3CC534008E7312 /* TestDetectionUrlTests.m */; };
 		737C7BD01D3CC534008E7312 /* TestDetectionUrlUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 737C7BCF1D3CC534008E7312 /* TestDetectionUrlUITests.m */; };
+		737C7BE71D3DCB2D008E7312 /* DetectionUrlView.m in Sources */ = {isa = PBXBuildFile; fileRef = 737C7BE61D3DCB2D008E7312 /* DetectionUrlView.m */; };
+		737C7BEA1D3DCB6F008E7312 /* TTTAttributedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 737C7BE91D3DCB6F008E7312 /* TTTAttributedLabel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		737C7BCB1D3CC534008E7312 /* TestDetectionUrlUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestDetectionUrlUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		737C7BCF1D3CC534008E7312 /* TestDetectionUrlUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestDetectionUrlUITests.m; sourceTree = "<group>"; };
 		737C7BD11D3CC534008E7312 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		737C7BE51D3DCB2D008E7312 /* DetectionUrlView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetectionUrlView.h; sourceTree = "<group>"; };
+		737C7BE61D3DCB2D008E7312 /* DetectionUrlView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetectionUrlView.m; sourceTree = "<group>"; };
+		737C7BE81D3DCB6F008E7312 /* TTTAttributedLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTTAttributedLabel.h; path = "TestDetectionUrl/自动识别Url等/TTTAttributedLabel/TTTAttributedLabel.h"; sourceTree = SOURCE_ROOT; };
+		737C7BE91D3DCB6F008E7312 /* TTTAttributedLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TTTAttributedLabel.m; path = "TestDetectionUrl/自动识别Url等/TTTAttributedLabel/TTTAttributedLabel.m"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +107,7 @@
 		737C7BA91D3CC534008E7312 /* TestDetectionUrl */ = {
 			isa = PBXGroup;
 			children = (
+				737C7BE41D3DCB20008E7312 /* 自动识别Url等 */,
 				737C7BAD1D3CC534008E7312 /* AppDelegate.h */,
 				737C7BAE1D3CC534008E7312 /* AppDelegate.m */,
 				737C7BB01D3CC534008E7312 /* ViewController.h */,
@@ -138,6 +145,26 @@
 				737C7BD11D3CC534008E7312 /* Info.plist */,
 			);
 			path = TestDetectionUrlUITests;
+			sourceTree = "<group>";
+		};
+		737C7BDD1D3CCBA1008E7312 /* TTTAttributedLabel */ = {
+			isa = PBXGroup;
+			children = (
+				737C7BE81D3DCB6F008E7312 /* TTTAttributedLabel.h */,
+				737C7BE91D3DCB6F008E7312 /* TTTAttributedLabel.m */,
+			);
+			name = TTTAttributedLabel;
+			path = ../TTTAttributedLabel;
+			sourceTree = "<group>";
+		};
+		737C7BE41D3DCB20008E7312 /* 自动识别Url等 */ = {
+			isa = PBXGroup;
+			children = (
+				737C7BDD1D3CCBA1008E7312 /* TTTAttributedLabel */,
+				737C7BE51D3DCB2D008E7312 /* DetectionUrlView.h */,
+				737C7BE61D3DCB2D008E7312 /* DetectionUrlView.m */,
+			);
+			path = "自动识别Url等";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,7 +299,9 @@
 			files = (
 				737C7BB21D3CC534008E7312 /* ViewController.m in Sources */,
 				737C7BAF1D3CC534008E7312 /* AppDelegate.m in Sources */,
+				737C7BE71D3DCB2D008E7312 /* DetectionUrlView.m in Sources */,
 				737C7BAC1D3CC534008E7312 /* main.m in Sources */,
+				737C7BEA1D3DCB6F008E7312 /* TTTAttributedLabel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
